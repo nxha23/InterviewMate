@@ -1,0 +1,132 @@
+.maskImg{
+    flex: 1; 
+    display: flex; 
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    height: 100%; /* Full height of the parent container */
+    position: relative;
+  }
+
+.aboutImg{
+    display: flex; /* This will make your container a flex container */
+    align-items: center; /* This will vertically center your items */
+    justify-content: center; /* This will horizontally center your items */
+    width: 100%;
+    height:90.5vh;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.aboutImg .content{
+  margin: 1rem 0.2rem;
+}
+
+
+.abt-img{
+  width: 100%; /* To make sure image does not overflow its container */
+  height: 100%; /* To maintain aspect ratio and not overflow */
+  object-fit: cover; /* To make sure that the image is contained within its div */
+}
+
+
+.aboutImg .content{
+    flex: 1; /* Same as maskImg, to take up the space it needs */
+    padding: 2rem; /* Adjust padding as necessary */
+    color: rgb(0, 0, 0);
+    
+}
+
+.aboutImg .content h1{
+    font-size: 3rem;
+    padding: 0.6rem 0 1.5rem;
+}
+
+.aboutImg .content p{
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.btn{
+    padding: 12px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #3d789a;
+    color: #fffcfc;
+    border: 2px solid #d0d0d0;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 1rem 1rem;
+    margin-left: 0;
+}
+
+.btn-light{
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: transparent;
+  color: #3d789a;;
+  border: 2px solid #3d789a;;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.88);
+    color: #3d789a;
+    transition: 0.3s;
+}
+
+.btn-light:hover{
+  background: #3d789a;
+  color: #ffffff;
+  border: 2px solid #d0d0d0;;
+  transition: 0.3s;
+}
+
+
+@media screen and (max-width:640px) {
+    .aboutImg {
+      flex-direction: column;
+      margin-top: 30px; /* Adjust the top margin as needed */
+    }
+  
+    .aboutImg .content {
+      order: 1;
+      padding: 1rem; /* Reduced padding for smaller screens */
+      margin-top: 0; /* No extra margin at the top for the content */
+    }
+  
+    .maskImg {
+      order: 2; /* This will put the image below the text content */
+      width: 100%; /* Full width to use all available space */
+      height: auto; /* Height auto for intrinsic aspect ratio of the image */
+      position: relative; /* Image positioned relative to its container */
+    }
+  
+    .abt-img {
+      width: 100%; /* Image will fill the width of its container */
+      height: auto; /* Height auto to maintain aspect ratio */
+      object-fit: cover; /* Cover to ensure the image covers the area */
+      position: absolute; /* Position absolute to fit it inside the .maskImg */
+      top: 0; /* Align the top of the image to the top of its container */
+      left: 0; /* Align the left of the image to the left of its container */
+    }
+  
+    .aboutImg .content h1 {
+      font-size: 2rem; /* Smaller font size for headers on small screens */
+    }
+  
+    .aboutImg .content p {
+      font-size: 1rem; /* Smaller font size for paragraphs on small screens */
+      margin-bottom: 20px; /* Reduced bottom margin for paragraphs */
+    }
+  
+    /* Adjust the button size as needed for smaller screens */
+    .btn {
+      padding: 10px 20px; /* Smaller padding for the button */
+      font-size: 0.9rem; /* Smaller font size for the button text */
+    }
+}
+  

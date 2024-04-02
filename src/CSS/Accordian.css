@@ -1,0 +1,30 @@
+/* Accordion.css */
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-title {
+  background-color: rgb(178, 227, 245);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.accordion-content {
+  padding: 10px;
+  border: 1px solid rgb(225, 225, 225);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  display: none;
+  font-size: 1.1rem;
+}
+
+.accordion-content ol {
+  padding: 20px;
+  font-size: 1.1rem;
+}
+.accordion-item.open .accordion-content {
+  display: block;
+}
