@@ -97,6 +97,17 @@ const FinancialLayout = () => {
                     </ul>
                 </AccordionItem>
 
+                <AccordionItem title="Secondary and Tertiary Education Institutions in the UK">
+          
+                <br/>
+                <div className="section-image-institutions">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/real-estate-755f5.appspot.com/o/institution.png?alt=media&token=ad40cef5-ea32-4a56-8c90-7c495d75c3f7stitutions.png" alt="Institution" style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto', display: 'block', margin: 'auto' }} />
+                  </div>
+
+                </AccordionItem>
+
+
+
         </Accordion>
       </div>
 
@@ -133,30 +144,32 @@ const FinancialLayout = () => {
         <Accordion>
                 <AccordionItem title="Income Statement Projections">
                   <ul>
-                    <li><strong>Net sales</strong> - 500,000 (5000 units at £100) </li>
-                    <li><strong>Operating income</strong> - 50,000 </li>
-                    <li><strong>Net income</strong> - 37,500 (25% tax) </li>
+                    <li><strong>Net sales (Year 1)</strong> - £750,000 (5000 units at £150) </li>
+                    <li><strong>Product manufacturing cost</strong> - £388,500 </li>
+                    <li><strong>Operational cost</strong> - £150,000 </li>
+                    <li><strong>Gross Profit</strong> - £361,500 </li>
+                    <li><strong>EBIT</strong> - £211,500 </li>
+                    <li><strong>Net income</strong> - £169,200</li>
                   </ul>
                 </AccordionItem>
 
                 <AccordionItem title="Funding and Capital Structure">
                   <ul>
-                    <li><strong>Seed funding </strong>- 150,000 (investments) </li>
-                    <li><strong>Total assets </strong> - 200,000</li>
-                    <li><strong>Current assets </strong> - 100,000</li>
-                    <li><strong>Total liabilities </strong> - 100,000 (initial loan cost)</li>
-                    <li><strong>Current liabilities</strong> - 40,000</li>
+                    <li><strong>Total assets </strong> - £1,011,500</li>
+                    <li><strong>Current assets </strong> - £750,000</li>
+                    <li><strong>Total liabilities </strong> - £200,000 (initial loan cost)</li>
+                    <li><strong>Current liabilities</strong> - £200,000</li>
                   </ul>
                 </AccordionItem>
 
                 <AccordionItem title="Altman Z''-Score Analysis">
                   <ul>
-                    <li><strong>Working capital</strong> - 100,000 (Total assets - total liabilities)</li>
-                    <li><strong>Total assets</strong> - 200,000</li>
-                    <li><strong>Retained earnings</strong> - 25,000 (2/3 of net income reinvested)</li>
-                    <li><strong>EBIT</strong> - 60,000 (operating income before tax)</li>
-                    <li><strong>Book value of equity</strong> - 60,000 (Current assets - current liabilities)</li>
-                    <li><strong>Book value of total debt</strong> - 60,000 (Total liabilities - current liabilities) </li>
+                    <li><strong>Working capital</strong> - £550,000 (Total assets - total liabilities)</li>
+                    <li><strong>Total assets</strong> - £1,011,500</li>
+                    <li><strong>Retained earnings</strong> - £169,200 (2/3 of net income reinvested)</li>
+                    <li><strong>EBIT</strong> - £211,500 (operating income before tax)</li>
+                    <li><strong>Book value of equity</strong> - £811,500 (Current assets - current liabilities)</li>
+                    <li><strong>Book value of total debt</strong> - £200,000 (Total liabilities - current liabilities) </li>
                   </ul>
                 </AccordionItem>
 
@@ -173,27 +186,27 @@ const FinancialLayout = () => {
                       <tbody>
                         <tr>
                           <td>X1 = Working Capital / Total Assets</td>
-                          <td>100,000 / 200,000</td>
-                          <td>0.5</td>
+                          <td>550,000 / 1,011,500</td>
+                          <td>0.5437</td>
                         </tr>
                         <tr>
                           <td>X2 = Retained Earnings / Total Assets</td>
-                          <td>25,000 / 200,000</td>
-                          <td>0.125</td>
+                          <td>169,200 / 1,011,500</td>
+                          <td>0.1673</td>
                         </tr>
                         <tr>
                           <td>X3 = EBIT / Total Assets</td>
-                          <td>60,000 / 200,000</td>
-                          <td>0.3</td>
+                          <td>211,500 / 1,011,500</td>
+                          <td>0.2091</td>
                         </tr>
                         <tr>
                           <td>X4 = Market Value of Equity / Total Liabilities</td>
-                          <td>60,000 / 60,000</td>
-                          <td>1.0</td>
+                          <td> 811,500 / 200,000</td>
+                          <td>4.0575</td>
                         </tr>
                         <tr>
                           <td colSpan="2">Z''-Score = 3.25 + (6.56 * X1) + (3.26 * X2) + (6.72 * X3) + (1.05 * X4)</td>
-                         <td><strong>10.0035</strong></td>
+                         <td><strong>13.0276</strong></td>
                         </tr>
                         </tbody>
                       </table>

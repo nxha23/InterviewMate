@@ -15,7 +15,7 @@ const AboutImg = () => {
             <p>Our company is dedicated to revolutionising the interview preparation experience through innovative technology solutions. At the heart of our operation is a groundbreaking product that leverages Large Language Model (LLM) technology to generate dynamic practice interviews tailored to the specific job requirements provided by users. By harnessing the power of artificial intelligence, we aim to equip individuals with the skills and confidence necessary to excel in their career pursuits.</p>
             <div className='button-container"'>
                 <Link to ="/BusinessPlan" className="btn"> Learn More</Link>
-                <a href={LeanCanvasPDF} target="_blank" rel="noopener noreferrer" className="btn-light"> Lean Canvas</a>
+                <a href="https://firebasestorage.googleapis.com/v0/b/real-estate-755f5.appspot.com/o/leancanvas.png?alt=media&token=0e6a6103-95ec-4256-9c35-3a7e6459a552" target="_blank" rel="noopener noreferrer" className="btn-light"> Lean Canvas</a>
             </div>
         </div>
     </div>
