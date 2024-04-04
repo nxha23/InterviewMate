@@ -30,7 +30,7 @@ const FinancialLayout = () => {
             <li>Staff</li>
         </ul>
         <br/>
-        <p><strong>Estimate operational costs add up to 61,500 for 5000 units sold. </strong>
+        <p><strong>Estimate operational costs add up to £150,000. </strong>
         </p>
       </div>
 
